@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Interactive Rating Component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="star-div">
+          <img src="images/icon-star.svg" alt="" />
+        </div>
+        <h1 class="header">How did we do?</h1>
+        <p class="card-par">
+          Please let us know how we did with ur support request.All feedback is
+          appreciated to help us improve our offering!
+        </p>
+
+        <ul id="rates-ul">
+          <li class="rates">1</li>
+          <li class="rates">2</li>
+          <li class="rates">3</li>
+          <li class="rates">4</li>
+          <li class="rates">5</li>
+        </ul>
+
+        <button class="card-btn" type="submit">SUBMIT</button>
+      </div>
+      <div class="thank-card hidden">
+        <img class="thank-img" src="images/illustration-thank-you.svg" alt="" />
+        <div class="chip">
+          <p>You selected <span id="your-rate"></span> out of 5</p>
+        </div>
+        <h2 class="title header">Thank you!</h2>
+        <p class="desc card-par">
+          We appreciate you taking time to give a rating.If you ever need more
+          support,don't hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
